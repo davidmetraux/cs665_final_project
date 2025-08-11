@@ -17,6 +17,7 @@ public class Main {
         // notify the chairperson observer.
         // If the course is already filled, they will be added to a waitlist, and if they are the first student
         // in the waitlist, they will be made as an observer
+        System.out.println("Students enrolling in course, chairperosn will be notified when full");
         introCourse.addStudentToCourseOrWaitlist(alice);
         introCourse.addStudentToCourseOrWaitlist(bianca);
         introCourse.addStudentToCourseOrWaitlist(candace);
@@ -24,11 +25,13 @@ public class Main {
         //student dropping
         // If there is a student in the waitlist, the first student will be notified, removed from the waitlist,
         // and added to the students in the course. The next person in the waitlist will be made into an observer.
+        System.out.println("\nStudent drops from course, next person in waitlist will be notified and added to course");
         introCourse.removeStudentFromCourse(alice);
 
         introCourse.addStudentToCourseOrWaitlist(daniela);
         introCourse.addStudentToCourseOrWaitlist(erica);
 
+        System.out.println("\nStudent drops from course, next person in waitlist will be notified and added to course");
         introCourse.removeStudentFromCourse(bianca);
     }
 }

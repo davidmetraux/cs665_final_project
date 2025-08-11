@@ -3,8 +3,8 @@ package cs665.structural.facade;
 import java.util.List;
 
 public class CertificateProgram implements Program{
-    String name;
-    List<String> courses;
+    private String name;
+    private List<String> courses;
 
     public CertificateProgram(String name, List<String> courses){
         this.name = name;

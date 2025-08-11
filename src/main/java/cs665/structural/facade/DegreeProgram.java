@@ -3,10 +3,10 @@ package cs665.structural.facade;
 import java.util.List;
 
 public class DegreeProgram implements Program{
-    String name;
-    String type;
-    List<String> coreCourses;
-    List<String> electiveCourses;
+    private String name;
+    private String type;
+    private List<String> coreCourses;
+    private List<String> electiveCourses;
 
     public DegreeProgram(String name, String type, List<String> coreCourses, List<String> electiveCourses){
         this.name = name;

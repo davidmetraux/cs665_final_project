@@ -29,7 +29,7 @@ public class Main {
         Formattable programmingLanguagesConcentration = new ConcentrationComposite("Programming Languages", "This concentration focuses on programming languages in general",
                 Arrays.asList(proceduralConcentration, objectOrientedConcentration));
 
-        System.out.println("\nformat of a concentration that coontains other concentrations");
+        System.out.println("\nformat of a concentration that contains other concentrations");
         System.out.println(programmingLanguagesConcentration.format());
     }
 }

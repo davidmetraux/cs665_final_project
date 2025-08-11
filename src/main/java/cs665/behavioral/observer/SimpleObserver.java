@@ -15,11 +15,11 @@ public class SimpleObserver implements Observer {
     @Override
     public void update(String value) {
         this.value = value;
-        this.display();
+        this.sendMessage();
 
     }
 
-    public void display() {
+    public void sendMessage() {
         System.out.println("Message received by "+this.person.getName()+" : "+ this.value);
     }
 }

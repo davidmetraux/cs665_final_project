@@ -1,6 +1,5 @@
 package cs665.structural.composite;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ConcentrationComposite implements Formattable {

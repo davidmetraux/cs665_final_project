@@ -1,4 +1,4 @@
-package cs665.behavioral.momento;
+package cs665.behavioral.memento;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,11 +21,11 @@ public class Student {
         this.currentCourses.clear();
     }
 
-    public StudentCoursesMomento createMemento() {
-        return new StudentCoursesMomento(new ArrayList<>(this.currentCourses), new ArrayList<>(this.finishedCourses));
+    public StudentCoursesMemento createMemento() {
+        return new StudentCoursesMemento(new ArrayList<>(this.currentCourses), new ArrayList<>(this.finishedCourses));
     }
 
-    public void restoreFromMemento(StudentCoursesMomento memento) {
+    public void restoreFromMemento(StudentCoursesMemento memento) {
         this.finishedCourses = memento.getFinishedCourses();
         this.currentCourses = memento.getCurrentCourses();
     }

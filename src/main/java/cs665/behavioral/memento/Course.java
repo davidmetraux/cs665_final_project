@@ -1,4 +1,4 @@
-package cs665.behavioral.momento;
+package cs665.behavioral.memento;
 
 public class Course {
     private String name;
